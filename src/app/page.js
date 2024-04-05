@@ -1,113 +1,103 @@
-import Image from "next/image";
+import Phone from "../../public/img/phone.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <div className="flex justify-center h-lvh">
+        {/* 1 */}
+        <div className="max-w-[1100px] w-full flex-col flex pt-60 items-start">
+          <h2 className="text-7xl font-bold">STREET MARKET</h2>
+          <p className="text-xl mt-5">
+            플리마켓의 모든 것,
+            <br /> 셀러들을 위한 플리마켓 소식부터
+            <br /> CS서비스까지 도와드립니다.
+          </p>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* 2 */}
+      <div className="h-lvh">
+        <div className="flex items-center flex-col">
+          <h2 className="text-5xl text-center mb-5">
+            STREET MARKET은 셀러분들을 위해
+            <br /> 다양한 플리마켓 행사소식을 알려드립니다.
+          </h2>
+          <p className="text-xl">
+            소규모부터 대규모 행사까지! 지역, 장소 상관없이 셀러분들이 참가할 수
+            있는 행사를 쉽고 빠르게 전달해드립니다.
+          </p>
+          {/* 캐러셀 */}
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      {/* 3 */}
+      <div className="h-lvh">
+        <div className="flex items-center flex-col">
+          <h2 className="text-5xl text-center mb-5">
+            빠르고 간편한 서비스를 제공합니다.
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+          <p className="text-xl text-center">
+            셀러님의 소중한 개인정보 보호를 위해 별도의 플랫폼 가입 없이
+            <br /> 필요 정보만 수집하여 참가신청을 도와드립니다.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          {/* 이미지 */}
+          <div className="mt-20">
+            <img src={Phone.src} alt="" />
+          </div>
+        </div>
       </div>
-    </main>
+      {/* 4 */}
+      <div className="h-lvh">
+        <div className="flex items-center flex-col">
+          <h2 className="text-5xl text-center mb-5">
+            맞춤 고객서비스를 제공합니다.
+          </h2>
+          <p>오프라인으로 진행되는 플리마켓의 서비스 문제를 해결해 드립니다.</p>
+          {/* 이미지 */}
+        </div>
+      </div>
+      {/* 신청하기 */}
+      <div className="h-lvh z-10">
+        <div className="flex items-center flex-col">
+          <h2 className="text-5xl text-center mb-5">CONTACT US</h2>
+          <p className="mb-10">STREETMARKET과 함께 나아갈 셀러를 모집합니다.</p>
+        </div>
+        <div className="flex justify-center">
+          <div className="bg-white max-w-[1440px] w-full py-40 rounded-3xl flex justify-center items-center shadow-2xl">
+            <form action="">
+              <div className="flex flex-col items-center">
+                <input
+                  className="p-3 w-[600px] h-16 mb-4 rounded-md placeholder-black text-xl bg-gray-100"
+                  type="text"
+                  placeholder="이름"
+                />
+                <input
+                  className="p-3 w-[600px] h-16 mb-5 rounded-md placeholder-black text-xl bg-gray-100"
+                  type="text"
+                  placeholder="연락처"
+                />
+                <div className="flex max-w-[600px] w-full">
+                  <input id="check" type="checkbox" />
+                  <label for="check">
+                    <p className="pl-5 text-slate-500">
+                      스트릿 마켓 알림톡 서비스에 동의하십니까?
+                    </p>
+                    <p className="pl-5 text-slate-500">
+                      알림톡 서비스(광고포함)를 위해 이름, 연락처를 수집하며 그
+                      외 용도로는 사용하지 않습니다.
+                    </p>
+                  </label>
+                </div>
+                <button
+                  className="bg-gray-100 text-blue-500 w-[150px] h-[50px] rounded-md p-2"
+                  type="submit"
+                >
+                  서비스 신청하기
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
